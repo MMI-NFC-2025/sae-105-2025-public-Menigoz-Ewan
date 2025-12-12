@@ -5,10 +5,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 6rem 5%;
     color: #ffffff;
     overflow: hidden;
+    text-align: center;
 }
 
 .hero__image {
@@ -43,6 +44,30 @@
     gap: 0.6rem;
     margin: 0.25rem 0;
     color: #ffffff;
+}
+
+/* Badge: festival éco-responsable */
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(90deg, var(--primary-color, #2C5F2D));
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.hero__badge--icon {
+    width: 1.1rem;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.hero__badge--text {
+    font-size: 0.8rem;
 }
 
 .btn-reservation {
