@@ -6,7 +6,8 @@
 }
 
 .menu__list {
-    display: none !important; /* hide links entirely */
+    display: none !important;
+    /* hide links entirely */
     gap: 0.6rem;
     align-items: center;
     flex-wrap: nowrap;
@@ -23,7 +24,8 @@
 .menu-btn {
     background: transparent;
     border: 0;
-    display: inline-flex !important; /* force visible */
+    display: inline-flex !important;
+    /* force visible */
     position: absolute;
     right: 1.2rem;
     top: 0.8rem;
@@ -45,5 +47,8 @@
 
 /* Keep hamburger visible on all screens; menu remains hidden */
 @media (min-width: 900px) {
-    .menu-btn { right: 2rem; top: 1rem; }
+    .menu-btn {
+        right: 2rem;
+        top: 1rem;
+    }
 }
