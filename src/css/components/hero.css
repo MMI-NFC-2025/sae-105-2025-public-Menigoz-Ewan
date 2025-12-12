@@ -84,32 +84,20 @@
 .btn-reservation {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
+    justify-content: center;
     background: var(--accent-color, #FFD700);
     color: var(--dark-color, #1A1A1A);
-    padding: 0.7rem 1rem;
+    padding: 0.85rem 1.25rem;
     border-radius: 8px;
     font-weight: 700;
     box-shadow: 0 8px 30px rgba(1, 18, 62, 0.45);
     text-decoration: none;
     margin-top: 0.8rem;
-}
-
-.btn-reservation img {
-    height: 1rem;
+    min-width: 220px;
 }
 
 .btn-reservation:hover {
     transform: translateY(-3px);
-}
-
-/* Center and uppercase the reservation button text */
-.btn-reservation {
-    justify-content: center;
-    /* center content horizontally */
-    padding: 0.85rem 1.25rem;
-    /* slightly larger touch area */
-    min-width: 220px;
 }
 
 .btn-reservation__text {
@@ -118,12 +106,6 @@
     text-align: center;
     letter-spacing: 0.6px;
     color: inherit;
-}
-
-.btn-reservation img {
-    /* keep icon small and not disrupting centering */
-    height: 1rem;
-    margin-right: 0.5rem;
 }
 
 /* Logo inside hero (above title) */

@@ -10,21 +10,21 @@
 
 .dates__date--vendredi,
 .dates__date--samedi {
-    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a7f 100%);
-    border: 2px solid var(--accent-color, #FFD700);
-    border-radius: 2rem;
-    padding: 2.5rem 1.5rem;
+    background: #1b2e58;
+    border: 2px solid rgba(198, 211, 255, 0.7);
+    border-radius: 16px;
+    padding: 2rem 1.5rem 2.25rem;
     text-align: center;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    gap: 0.75rem;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
 }
 
 .dates__date--title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--accent-color, #FFD700);
     font-weight: 800;
     margin: 0;
@@ -36,15 +36,15 @@
 
 .dates__date--vendredi>img,
 .dates__date--samedi>img {
-    width: 3.5rem;
+    width: 3rem;
     height: auto;
-    order: -1;
-    margin-bottom: 0.5rem;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(79%) saturate(1820%) hue-rotate(11deg) brightness(107%) contrast(102%);
+    margin-bottom: 0.25rem;
 }
 
 .dates__date--text {
-    font-size: 0.95rem;
-    color: #d0d0d0;
+    font-size: 1rem;
+    color: #e6e9f4;
     line-height: 1.6;
     margin: 0;
 }

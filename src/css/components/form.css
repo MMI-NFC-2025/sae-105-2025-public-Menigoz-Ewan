@@ -43,7 +43,7 @@
 }
 
 .contact-form__submit {
-    margin-top: 0.5rem;
+    margin: 0.5rem auto 0;
     background: var(--accent-color, #FFD700);
     color: #0b2044;
     border: none;
@@ -52,8 +52,72 @@
     font-weight: 800;
     font-size: 1rem;
     cursor: pointer;
+    display: block;
+    width: fit-content;
 }
 
 .contact-form__submit:hover {
     transform: translateY(-2px);
+}
+
+/* Coordonnées section styling */
+.coordonnees {
+    background: #01123E;
+    padding: 3rem 5% 3.5rem;
+}
+
+.coordonnees__title {
+    color: var(--accent-color, #FFD700);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+}
+
+.coordonnees__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.coordonnees__card {
+    background: #1b2e58;
+    border: 2px solid rgba(198, 211, 255, 0.7);
+    border-radius: 16px;
+    padding: 1.5rem 1.5rem 1.75rem;
+    color: #e6e9f4;
+}
+
+.coordonnees__card-title {
+    color: #e6e9f4;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+}
+
+.coordonnees__card-text {
+    color: #e6e9f4;
+    margin: 0.25rem 0;
+    line-height: 1.6;
+}
+
+.coordonnees__social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.coordonnees__social img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+    .coordonnees__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
 }
