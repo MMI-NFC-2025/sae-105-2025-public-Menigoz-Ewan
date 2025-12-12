@@ -1,0 +1,30 @@
+/* ===== VARIABLES ===== */
+:root {
+    --primary-color: #2C5F2D;
+    --secondary-color: #97BC62;
+    --accent-color: #FFD700;
+    --dark-color: #1A1A1A;
+    --white: #FFFFFF;
+    --transition: all 0.3s ease;
+}
+
+/* ===== RESET BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
