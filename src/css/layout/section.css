@@ -310,8 +310,18 @@
 }
 
 .infos-page .faq-item p {
-    padding: 0 1.25rem 1rem;
     margin: 0;
     color: #e6e9f4;
     line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 1.25rem 0;
+    transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
+}
+
+.infos-page .faq-item[open] p {
+    max-height: 500px;
+    opacity: 1;
+    padding: 0 1.25rem 1rem;
 }
