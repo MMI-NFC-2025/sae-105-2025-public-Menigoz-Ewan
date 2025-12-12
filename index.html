@@ -15,12 +15,12 @@
         <a class="header__link" href="/">
             <img class="header__logo header__logo--light" alt="Logo Flying Tap Fest" src="/assets/icons/logo.svg" />
         </a>
-        <button class="header__menu-btn menu-btn" aria-label="Menu de navigation">
+        <button id="navToggle" class="header__menu-btn menu-btn" aria-label="Menu de navigation" aria-expanded="false">
             <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
             <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--middle"></span>
             <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
         </button>
-        <nav class="header__menu menu">
+        <nav id="siteNav" class="header__menu menu" aria-hidden="true">
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/le-festival.html">Le Festival</a></li>
@@ -31,10 +31,12 @@
                 <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <script src="src/js/script.js" defer></script>
     </header>
 
     <main>
         <section class="hero">
+            <img class="hero__logo" src="/assets/icons/logo.svg" alt="Logo Flying Tap Fest" />
             <h1 class="hero__logo--text">Flying Tap Fest 2026</h1>
             <img class="hero__image" alt="Fond hero du festival" src="/assets/images/imagefondhero.avif" />
             <span class="hero__badge">
@@ -45,8 +47,9 @@
                 terre</p>
             <p class="hero__date"><img src="assets/icons/vecteurcalendrier.svg" alt="calendrier">6 et 7 juin 2026</p>
             <p class="hero__lieu"><img src="assets/icons/vecteurmap.svg" alt="map">Parc Près-La-Rose, Montbéliard</p>
-            <a href="#billetterie" class="btn-reservation"><img src="assets/icons/rectangle1.svg"
-                    alt="rectangle1">Réservez vos billets</a>
+            <a href="404.html" class="btn-reservation"><img src="assets/icons/rectangle1.svg" alt="rectangle1"><span
+                    class="btn-reservation__text">Réservez
+                    vos billets</span></a>
         </section>
 
         <section class="dates">
@@ -72,27 +75,26 @@
 
         <section class="navigation__rapide">
             <article class="navigation__nav--card">
-                <h3 class="navigation__nav--card title"><img src="assets/icons/rectangle2.svg" alt="">Programme</h3>
                 <img src="assets/icons/vecteurprogramme.svg" alt="programme">
+                <h3 class="navigation__nav--card title">Programme</h3>
                 <p class="navigation__nav--card text">Découvre tous les spectacles et horaires</p>
             </article>
 
             <article class="navigation__nav--card">
-                <h3 class="navigation__nav--card title"><img src="assets/icons/rectangle2.svg" alt="">Artistes</h3>
                 <img src="assets/icons/vecteurartistes.svg" alt="artistes">
+                <h3 class="navigation__nav--card title">Artistes</h3>
                 <p class="navigation__nav--card text">Rencontrez les talents du festival</p>
             </article>
 
             <article class="navigation__nav--card">
-                <h3 class="navigation__nav--card title"><img src="assets/icons/rectangle2.svg" alt="">Scènes</h3>
                 <img src="assets/icons/vecteurmap.svg" alt="map">
+                <h3 class="navigation__nav--card title">Scènes</h3>
                 <p class="navigation__nav--card text">Explorez nos différentes scènes</p>
             </article>
 
             <article class="navigation__nav--card">
-                <h3 class="navigation__nav--card title"><img src="assets/icons/rectangle2.svg" alt="rectangle2">Infos
-                    Pratiques</h3>
                 <img src="assets/icons/vecteurinfospratiques.svg" alt="infos pratiques">
+                <h3 class="navigation__nav--card title">Infos Pratiques</h3>
                 <p class="navigation__nav--card text">Préparez votre venue au festival</p>
             </article>
         </section>

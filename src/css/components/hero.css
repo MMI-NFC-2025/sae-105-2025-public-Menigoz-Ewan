@@ -1,43 +1,41 @@
 /* Hero component styles matching the provided mockup */
 .hero {
     position: relative;
-    min-height: 70vh;
+    min-height: 60vh;
+    /* mobile-first hero height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem 5%;
+    padding: 6rem 5% 3.5rem;
     color: #ffffff;
     overflow: hidden;
     text-align: center;
+}
 
-    .hero {
-        position: relative;
-        min-height: 60vh;
-        /* mobile-first hero height */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem 5%;
-        color: #ffffff;
-        overflow: hidden;
-        text-align: center;
-    }
+.hero__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* show full image on mobile */
+    object-position: center top;
+    z-index: 0;
+    /* darken/fade image only — keeps overlaid content fully opaque */
+    filter: brightness(0.45) contrast(1.02);
+    background-color: transparent;
+}
 
-    .hero__image {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        /* show full image on mobile */
-        object-position: center top;
-        z-index: 0;
-        opacity: 0.85;
-        background-color: transparent;
-    }
+.hero>*:not(.hero__image) {
+    position: relative;
+    z-index: 1;
+}
 
+.hero__logo--text {
+    font-size: 2.25rem;
+    color: var(--accent-color, #FFD700);
+    font-weight: 800;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
 }
@@ -53,12 +51,18 @@
     color: #ffffff;
 }
 
+.hero__date img,
+.hero__lieu img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
 /* Badge: festival éco-responsable */
 .hero__badge {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    background: linear-gradient(90deg, var(--primary-color, #2C5F2D));
+    background: linear-gradient(90deg, var(--primary-color, #2C5F2D), var(--secondary-color, #97BC62));
     padding: 0.5rem 1.25rem;
     border-radius: 999px;
     font-weight: 800;
@@ -99,6 +103,29 @@
     transform: translateY(-3px);
 }
 
+/* Center and uppercase the reservation button text */
+.btn-reservation {
+    justify-content: center;
+    /* center content horizontally */
+    padding: 0.85rem 1.25rem;
+    /* slightly larger touch area */
+    min-width: 220px;
+}
+
+.btn-reservation__text {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: inherit;
+}
+
+.btn-reservation img {
+    /* keep icon small and not disrupting centering */
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
 /* On larger screens use cover for a full-bleed hero look */
 @media (min-width: 900px) {
     .hero {
@@ -108,7 +135,36 @@
 
     .hero__image {
         object-fit: cover;
-        opacity: 0.45;
+        /* use filter so only the image is visually affected */
+        filter: brightness(0.45) contrast(1.02);
         object-position: center;
+    }
+
+    .hero__logo--text {
+        font-size: 3.25rem;
+    }
+
+    .hero__badge--text {
+        font-size: 0.95rem;
+    }
+}
+
+/* Logo inside hero (above title) */
+.hero__logo {
+    width: 120px;
+    /* slightly larger on mobile */
+    height: auto;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+@media (min-width: 900px) {
+    .hero__logo {
+        width: 180px;
+        /* enlarged for desktop */
+        margin-bottom: 1rem;
     }
 }

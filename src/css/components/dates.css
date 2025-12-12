@@ -1,0 +1,68 @@
+/* Dates section component styles */
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 5%;
+    background-color: var(--dark-color, #1A1A1A);
+}
+
+.dates__date--vendredi,
+.dates__date--samedi {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a7f 100%);
+    border: 2px solid var(--accent-color, #FFD700);
+    border-radius: 2rem;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.dates__date--title {
+    font-size: 1.5rem;
+    color: var(--accent-color, #FFD700);
+    font-weight: 800;
+    margin: 0;
+}
+
+.dates__date--title img {
+    display: none;
+}
+
+.dates__date--vendredi>img,
+.dates__date--samedi>img {
+    width: 3.5rem;
+    height: auto;
+    order: -1;
+    margin-bottom: 0.5rem;
+}
+
+.dates__date--text {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Desktop: side-by-side layout */
+@media (min-width: 900px) {
+    .dates {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .dates__date--vendredi,
+    .dates__date--samedi {
+        flex: 1;
+        padding: 3rem 2rem;
+    }
+
+    .dates__date--title {
+        font-size: 1.7rem;
+    }
+}
