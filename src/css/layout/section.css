@@ -63,6 +63,16 @@
     filter: invert(88%) sepia(69%) saturate(2165%) hue-rotate(8deg) brightness(103%) contrast(103%);
 }
 
+/* Green variant for Infos Pratiques */
+.navigation__nav--card--green {
+    border-color: var(--primary-color, #2C5F2D);
+}
+
+.navigation__nav--card--green img {
+    /* tint the icon to the primary green */
+    filter: invert(44%) sepia(77%) saturate(580%) hue-rotate(65deg) brightness(95%) contrast(92%);
+}
+
 .navigation__nav--card h3 {
     font-size: 1.3rem;
     color: #ffffff;
@@ -79,4 +89,46 @@
     border: none;
     padding: 0;
     margin: 0;
+}
+
+/* Eco responsible card */
+.eco__responsable {
+    margin: 2rem 5%;
+    background-color: #0f3f30;
+    /* deep green */
+    border-radius: 1.5rem;
+    padding: 2.5rem 2.25rem;
+    color: var(--secondary-color, #97BC62);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.eco__responsable .eco__icon {
+    display: block;
+    margin: 0 auto 0.8rem;
+    width: 4rem;
+    height: auto;
+    filter: invert(44%) sepia(77%) saturate(580%) hue-rotate(65deg) brightness(95%) contrast(92%);
+}
+
+.eco__responsable--title {
+    color: var(--secondary-color, #97BC62);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+
+.eco__responsable--text {
+    color: #e6f6ee;
+    line-height: 1.6;
+    margin: 0 0 1.25rem;
+    text-align: center;
+}
+
+.eco__responsable .btn-en-savoir-plus {
+    background: rgba(2, 34, 54, 0.95);
+    color: var(--secondary-color, #97BC62);
+    border: 2px solid var(--secondary-color, #97BC62);
+    padding: 0.6rem 1.1rem;
+    border-radius: 10px;
+    box-align: center;
 }
