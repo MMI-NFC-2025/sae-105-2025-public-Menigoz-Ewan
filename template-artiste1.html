@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <title>Tap Collective</title>
+
 </head>
+
 <body>
 
-    <header>
-        <a href="/">
-            <img alt="Logo Flying Tap Fest" src="/assets/icons/logo.svg" />
+    <header class="header">
+        <a class="header__link" href="/">
+            <img class="header__logo header__logo--light" alt="Logo Flying Tap Fest" src="/assets/icons/logo.svg" />
         </a>
-        <button aria-label="Menu de navigation">
-            <span></span>
-            <span></span>
+        <button id="navToggle" class="header__menu-btn menu-btn" aria-label="Menu de navigation" aria-expanded="false">
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--middle"></span>
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom"></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/le-festival.html">Le Festival</a></li>
-                <li><a href="/programme.html">Programme Complet</a></li>
-                <li><a href="/les-artistes.html">Les Artistes</a></li>
-                <li><a href="/les-scenes.html">Les Scènes</a></li>
-                <li><a href="/infos-pratiques.html">Infos Pratiques</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+        <nav id="siteNav" class="header__menu menu" aria-hidden="true">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/le-festival.html">Le Festival</a></li>
+                <li class="menu__item"><a class="menu__link" href="/programme.html">Programme Complet</a></li>
+                <li class="menu__item"><a class="menu__link" href="/les-artistes.html">Les Artistes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/les-scenes.html">Les Scènes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/infos-pratiques.html">Infos Pratiques</a></li>
+                <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <script src="src/js/script.js" defer></script>
     </header>
 
     <main>
@@ -36,8 +41,9 @@
             <h2 class="artist-name">Tap Collective</h2>
             <p class="date"><img src="assets/icons/vecteurcalendrier.svg" alt="">6 juin 2026</p>
             <p class="stage"><img src="assets/icons/vecteurmap.svg" alt="">Scène Principale</p>
-            <p class="artist-description">Pionnière de la claquette moderne, Tap Collective fusionne rythmes traditionnels et sons électroniques pour créer une
-            expérience unique. Leur style innovant repousse les limites de l'art de la claquette.</p>
+            <p class="artist-description">Pionnière de la claquette moderne, Tap Collective fusionne rythmes
+                traditionnels et sons électroniques pour créer une
+                expérience unique. Leur style innovant repousse les limites de l'art de la claquette.</p>
         </section>
 
         <section class="gallery">
@@ -47,59 +53,60 @@
             <img src="assets/images/tapco3.avif" alt="Tap Collective 3" />
         </section>
     </main>
-<footer>
-    <div class="footer-content">
-        <div class="footer-about">
-            <img alt="Logo Flying Tap Fest" src="/assets/icons/logo.svg" />
-            <h2>Flying Tap Fest</h2>
-            <p>Le premier festival français dédié aux claquettes modernes et au jazz. Un événement unique qui
-                célèbre l'art du rythme et de la danse au Parc Près-La-Rose.</p>
-            <p class="eco-badge">Festival Éco-responsable</p>
-        </div>
 
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content--about">
+                <img alt="Logo Flying Tap Fest" src="/assets/icons/logo.svg" />
+                <h2 class="footer__content--about title">Flying Tap Fest</h2>
+                <p class="footer__content--about text">Le premier festival français dédié aux claquettes modernes et au
+                    jazz. Un événement unique qui
+                    célèbre l'art du rythme et de la danse au Parc Près-La-Rose.</p>
+                <p class="footer__content--about eco__badge">Festival Éco-responsable</p>
+            </div>
 
-        <nav class="footer-nav">
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/le-festival.html">Le Festival</a></li>
-                <li><a href="/programme.html">Programme</a></li>
-                <li><a href="/les-artistes.html">Artistes</a></li>
-                <li><a href="/les-scenes.html">Scènes</a></li>
-            </ul>
-        </nav>
+            <nav class="footer__nav">
+                <h2 class="footer__nav--title">Navigation</h2>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/le-festival.html">Le Festival</a></li>
+                    <li><a href="/programme.html">Programme</a></li>
+                    <li><a href="/les-artistes.html">Artistes</a></li>
+                    <li><a href="/les-scenes.html">Scènes</a></li>
+                </ul>
+            </nav>
 
+            <div class="footer__contact">
+                <h2 class="footer__contact--title">Contact</h2>
+                <p class="footer__contact--text"><a href="mailto:contact@flyingtapfest.fr">contact@flyingtapfest.fr</a>
+                </p>
+                <p class="footer__contact--text"><a href="tel:+33381000000">+33 3 81 00 00 00</a></p>
+                <p class="footer__contact--text">25200 Montbéliard</p>
+            </div>
 
-        <div class="footer-contact">
-            <h2>Contact</h2>
-            <p><a href="mailto:contact@flyingtapfest.fr">contact@flyingtapfest.fr</a></p>
-            <p><a href="tel:+33381000000">+33 3 81 00 00 00</a></p>
-            <p>25200 Montbéliard</p>
-        </div>
-
-
-        <div class="footer-social">
-            <h2>Suivez-nous</h2>
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook">
-                    <img class="socialmediaimg" src="/assets/images/boutonfacebook.avif" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/" aria-label="Instagram">
-                    <img class="socialmediaimg" src="/assets/images/boutoninsta.avif" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/feed/" aria-label="TikTok">
-                    <img class="socialmediaimg" src="/assets/images/boutontiktok.avif" alt="TikTok">
-                </a>
+            <div class="footer__contact--social">
+                <h2 class="footer__contact--social title">Suivez-nous</h2>
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook">
+                        <img class="footer__contact--social socialmediaimg" src="/assets/images/boutonfacebook.avif"
+                            alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram">
+                        <img class="footer__contact--social socialmediaimg" src="/assets/images/boutoninsta.avif"
+                            alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/feed/" aria-label="TikTok">
+                        <img class="footer__contact--social socialmediaimg" src="/assets/images/boutontiktok.avif"
+                            alt="TikTok">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 Flying Tap Fest - Tous droits réservés</p>
-    </div>
-</footer>
-
+        <div class="footer__bottom">
+            <p>&copy; 2026 Flying Tap Fest - Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 
 </html>

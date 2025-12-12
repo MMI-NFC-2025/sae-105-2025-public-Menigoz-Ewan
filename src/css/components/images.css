@@ -1,0 +1,215 @@
+/* Responsive images and containers - Mobile-first approach */
+
+/* Base image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cards container - artist/scene cards */
+section.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    background-color: #01123E;
+}
+
+section.cards a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    background-color: #01123E;
+}
+
+.gallery .section-title {
+    color: var(--accent-color, #FFD700);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Programmation cards container */
+section.programmation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    background-color: #01123E;
+}
+
+/* Section with background images */
+.decouverte img,
+.historique img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Article images - cover full container */
+article img:not(.footer__contact--social) {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Gallery and carousel images - responsive containers */
+.gallery img,
+.gallery {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.partners-carousel__item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    object-position: center;
+    padding: 1rem;
+}
+
+/* Artist/Scene card images */
+.artist-card img,
+.card img,
+.team-member img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Artist description images */
+.artist-description img:first-child,
+section.artist-description>img:not([src*="vecteur"]):not([src*="icon"]) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Stage/Scene images */
+.stage-description img,
+.programmation-card img:not([src*="rectangle"]) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Icon and small images in content */
+img[src*="vecteur"],
+img[src*="icon"],
+img[src*="rectangle"],
+img[alt*="calendrier"],
+img[alt*="map"],
+.navigation__nav--card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Footer images */
+.footer__content--about img {
+    width: 56px;
+    height: 56px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+}
+
+.footer__contact--social .socialmediaimg {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 900px) {
+
+    /* Cards layout on desktop - grid */
+    section.cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Gallery on desktop - grid */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Programmation cards on desktop - grid */
+    section.programmation {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Maintain responsive behavior on desktop */
+    .gallery img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .artist-card img,
+    .card img,
+    .team-member img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .artist-description img:first-child {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .partners-carousel__item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        object-position: center;
+    }
+}
