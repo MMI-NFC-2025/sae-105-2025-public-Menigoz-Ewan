@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <title>Scène Principale</title>
+    <title>Recherche</title>
 
 </head>
 
@@ -46,32 +46,22 @@
         <script src="src/js/script.js" defer></script>
     </header>
 
-    <main class="scene-page">
-        <a class="scene-back" href="les-scenes.html"><img src="assets/icons/flèchegauche.svg" alt="">Retour aux
-            scènes</a>
-        <section class="scene-description">
-            <img class="scene-hero-img" src="assets/images/sceneprincipale.avif" alt="Scène Principale">
-            <h2 class="stage-name"><img src="assets/icons/vecteurmap.svg" alt="">Scène Principale</h2>
-            <p class="stage-text">La grande scène du festival, équipée d'un système son de pointe et d'un plancher de
-                danse spécialement conçu pour amplifier les sons de claquettes. Capacité de 5000 personnes.</p>
+    <main>
+        <section class="hero hero--infos">
+            <h1 class="hero-title">Recherche</h1>
+            <p class="hero-text">Retrouvez un artiste, une scène ou une information pratique</p>
         </section>
-        <h2 class="section-title">Programmation</h2>
-        <section class="programmation">
-            <article class="card">
-                <img src="assets/images/tapcotemplate.avif" alt="Tap Collective">
-                <h3 class="artist-name">Tap Collective</h3>
-                <p class="date"><img src="assets/icons/vecteurcalendrier.svg" alt="">6 juin à 20:00</p>
-                <p class="excerpt">Pionnière de la claquette moderne...</p>
-                <a href="/template-artiste1.html">En savoir plus</a>
-            </article>
 
-            <article class="card">
-                <img src="assets/images/echostepstemplate.avif" alt="Echo Steps">
-                <h3 class="artist-name">Echo Steps</h3>
-                <p class="date"><img src="assets/icons/vecteurcalendrier.svg" alt="">7 juin à 21:00</p>
-                <p class="excerpt">Duo minimaliste qui explore la musicalité...</p>
-                <a href="#">En savoir plus</a>
-            </article>
+        <section class="search-results">
+            <div class="search-results__header">
+                <h2 class="search-results__title">Résultats pour <span id="searchResultsQuery">votre recherche</span>
+                </h2>
+                <p class="search-results__summary">Utilisez la barre de recherche du menu pour lancer une requête
+                    interne.</p>
+            </div>
+            <div class="search-results__content" id="searchResultsContent">
+                <p class="search-results__empty">Aucun résultat pour le moment.</p>
+            </div>
         </section>
     </main>
 
