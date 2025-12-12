@@ -21,3 +21,29 @@
     border-radius: 6px;
     text-decoration: none;
 }
+
+/* Programme page: Download button (yellow, rounded, centered) */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: var(--accent-color, #FFD700);
+    color: var(--dark-color, #1A1A1A);
+    padding: 0.85rem 1.25rem;
+    border-radius: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(1, 18, 62, 0.45);
+    margin: 0.8rem auto 0;
+    /* center horizontally */
+    min-width: 260px;
+}
+
+.btn-download img {
+    height: 1.1rem;
+}
+
+.btn-download__text {
+    letter-spacing: 0.4px;
+}
