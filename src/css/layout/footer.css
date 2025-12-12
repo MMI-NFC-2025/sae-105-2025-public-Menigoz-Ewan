@@ -90,13 +90,3 @@
     margin-top: 1rem;
 }
 
-@media (min-width: 900px) {
-    .footer__content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 2rem;
-    }
-
-    .footer__content--about .text {
-        max-width: 320px;
-    }
-}
