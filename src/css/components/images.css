@@ -24,17 +24,19 @@ section.cards a {
 /* Gallery container */
 .gallery {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 5%;
+    gap: 1rem;
+    padding: 2rem 5% 1.25rem;
     background-color: #01123E;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .gallery .section-title {
     color: var(--accent-color, #FFD700);
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
 }
 
 /* Programmation cards container */
@@ -63,25 +65,17 @@ article img:not(.footer__contact--social) {
     object-position: center;
 }
 
-/* Gallery and carousel images - responsive containers */
-.gallery img,
-.gallery {
-    width: 100%;
-    height: auto;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
+/* Gallery carousel images */
 .gallery img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    flex: 0 0 auto;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
     object-position: center;
+    border-radius: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+    scroll-snap-align: start;
 }
 
 .partners-carousel__item img {
@@ -110,6 +104,15 @@ section.artist-description>img:not([src*="vecteur"]):not([src*="icon"]) {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Override for artist hero image with explicit dimensions */
+.artist-hero-img {
+    width: 357px;
+    max-width: 100%;
+    height: 408px;
     object-fit: cover;
     object-position: center;
 }
