@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css" />
     <title>Page non trouvée</title>
 </head>
+
 <body>
     <header class="header">
         <a class="header__link" href="/">
             <img class="header__logo header__logo--light" alt="Logo Flying Tap Fest" src="/assets/icons/logo.svg" />
+            <span class="header__title">Flying Tap Fest</span>
         </a>
         <button id="navToggle" class="header__menu-btn menu-btn" aria-label="Menu de navigation" aria-expanded="false">
             <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top"></span>
@@ -28,19 +32,15 @@
         </nav>
         <script src="src/js/script.js" defer></script>
     </header>
-    <style>
-        body {
-            text-align: center;
-        }
-    
-        h1 {
-            color: #e74c3c;
-        }
-    </style>
-    <h1>404</h1>
-    <p>Oups ! Cette page n'existe pas.</p>
-    <a href="/index.html">Retour à l'accueil</a>
-    
+    <main>
+        <section class="hero">
+            <h1 class="hero__logo--text">404</h1>
+            <p class="hero__text">Oups ! Cette page n'existe pas.</p>
+            <a href="/index.html" class="btn-reservation"><span class="btn-reservation__text">Retour à
+                    l'accueil</span></a>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__content--about">
@@ -51,7 +51,7 @@
                     célèbre l'art du rythme et de la danse au Parc Près-La-Rose.</p>
                 <p class="footer__content--about eco__badge">Festival Éco-responsable</p>
             </div>
-    
+
             <nav class="footer__nav">
                 <h2 class="footer__nav--title">Navigation</h2>
                 <ul>
@@ -62,7 +62,7 @@
                     <li><a href="/les-scenes.html">Scènes</a></li>
                 </ul>
             </nav>
-    
+
             <div class="footer__contact">
                 <h2 class="footer__contact--title">Contact</h2>
                 <p class="footer__contact--text"><a href="mailto:contact@flyingtapfest.fr">contact@flyingtapfest.fr</a>
@@ -70,7 +70,7 @@
                 <p class="footer__contact--text"><a href="tel:+33381000000">+33 3 81 00 00 00</a></p>
                 <p class="footer__contact--text">25200 Montbéliard</p>
             </div>
-    
+
             <div class="footer__contact--social">
                 <h2 class="footer__contact--social title">Suivez-nous</h2>
                 <div class="socialmedia">
@@ -89,10 +89,11 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="footer__bottom">
             <p>&copy; 2026 Flying Tap Fest - Tous droits réservés</p>
         </div>
     </footer>
 </body>
+
 </html>
