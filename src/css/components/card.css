@@ -448,3 +448,17 @@
     color: #e6e9f4;
     margin: 0.2rem 0;
 }
+
+.infos-page .hebergement-eco {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #2bbf63;
+    font-weight: 700;
+    margin-top: 0.6rem;
+}
+
+.infos-page .hebergement-eco img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
