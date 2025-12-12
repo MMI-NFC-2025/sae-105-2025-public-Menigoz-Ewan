@@ -1,0 +1,67 @@
+/* Team section cards - Mobile-first */
+
+.équipe {
+    padding: 3rem 5%;
+    background-color: #01123E;
+}
+
+.équipe .section-title {
+    color: var(--accent-color, #FFD700);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.team-member {
+    background: linear-gradient(180deg, rgba(34, 54, 94, 0.85), rgba(20, 40, 80, 0.9));
+    color: #e6eef9;
+    border-radius: 18px;
+    padding: 1rem;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    margin-bottom: 0.75rem;
+}
+
+.team-member-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0.2rem 0 0.1rem 0;
+}
+
+.team-member-role {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 0.25rem 0;
+}
+
+.équipe-text {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+    .team-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.75rem;
+    }
+
+    .team-member {
+        padding: 1.25rem;
+    }
+}
