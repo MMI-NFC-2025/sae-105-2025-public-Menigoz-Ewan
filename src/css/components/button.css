@@ -1,0 +1,23 @@
+/* Buttons used across the site */
+.btn-en-savoir-plus {
+    display: inline-block;
+    padding: 0.55rem 0.9rem;
+    border-radius: 6px;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-en-savoir-plus:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    padding: 0.45rem 0.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+}

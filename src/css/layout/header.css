@@ -12,3 +12,12 @@
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Small helpers for header links and logo (moved from index.html inline styles) */
+.header__link {
+    text-decoration: none;
+}
+
+.header__logo--light {
+    width: 50px;
+}
