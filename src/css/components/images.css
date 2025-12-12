@@ -38,6 +38,13 @@ section.cards a {
     margin: 0 5% 1rem;
 }
 
+.scene-page .section-title {
+    color: var(--accent-color, #FFD700);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 5% 1rem;
+}
+
 .gallery .section-title {
     color: var(--accent-color, #FFD700);
     font-size: 1.8rem;

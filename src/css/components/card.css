@@ -176,8 +176,8 @@
 }
 
 /* Scenes cards (Les Scènes) */
-.cards .card > img,
-.programmation .card > img {
+.cards .card>img,
+.programmation .card>img {
     width: 100%;
     display: block;
     border-radius: 14px;
@@ -212,6 +212,11 @@
     color: #e6e9f4;
     line-height: 1.6;
     margin: 0.5rem 0 0.75rem;
+}
+
+/* Yellow artist names for Scene programmation cards */
+.programmation .card .artist-name {
+    color: var(--accent-color, #FFD700);
 }
 
 /* Artist listing cards */
