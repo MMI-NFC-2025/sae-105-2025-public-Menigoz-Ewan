@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM :Menigoz
+- PRÉNOM :Ewan
+- GROUPE :B1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :https://www.figma.com/design/rE7BrJX59r2bxU6Cwrn9Vl/SA%C3%89-105-MENIGOZ-Ewan?node-id=63-453&t=unGqKpVpalLyCsKb-1
 
 ## Sujet
 
