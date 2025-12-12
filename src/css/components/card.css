@@ -176,7 +176,8 @@
 }
 
 /* Scenes cards (Les Scènes) */
-.cards .card>img {
+.cards .card > img,
+.programmation .card > img {
     width: 100%;
     display: block;
     border-radius: 14px;
@@ -203,6 +204,14 @@
     color: #e6e9f4;
     line-height: 1.6;
     margin-top: 0.5rem;
+}
+
+/* Excerpt text inside generic cards */
+.card .excerpt {
+    display: block;
+    color: #e6e9f4;
+    line-height: 1.6;
+    margin: 0.5rem 0 0.75rem;
 }
 
 /* Artist listing cards */
@@ -311,5 +320,56 @@
     color: #e6e9f4;
     line-height: 1.6;
     margin: 0.35rem 0 0;
+    font-size: 1rem;
+}
+
+/* Scene detail page */
+.scene-page {
+    padding: 6rem 5% 3.5rem;
+    background-color: #01123E;
+}
+
+.scene-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--accent-color, #FFD700);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 0 1.2rem 0;
+}
+
+.scene-back img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.scene-hero-img {
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    margin: 0 0 1.1rem 0;
+}
+
+.scene-description .stage-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--accent-color, #FFD700);
+    font-size: 1.35rem;
+    margin: 0.2rem 0 0.5rem 0;
+}
+
+.scene-description .stage-name img {
+    width: 1rem;
+    height: 1rem;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(79%) saturate(1820%) hue-rotate(11deg) brightness(107%) contrast(102%);
+}
+
+.scene-description .stage-text {
+    color: #e6e9f4;
+    line-height: 1.6;
+    margin: 0.15rem 0 0;
     font-size: 1rem;
 }
