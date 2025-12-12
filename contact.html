@@ -40,12 +40,30 @@
             <p class="hero-text">Une question ? N'hésitez pas à nous contacter</p>
         </section>
         <section class="contact-form">
-            <br><input type="text" placeholder="Prénom Nom" aria-label="Nom complet" />
-            <br><input type="text" placeholder="Email" aria-label="Email" />
-            <br><input type="text" placeholder="Sujet" aria-label="Sujet" />
-            <br><input placeholder="Votre message" aria-label="Message"></input>
-            <br><button type="submit">Envoyer</button>
-            <h2 class="button-text">Envoyer le message</h2>
+            <h2 class="contact-form__title">Envoyez-nous un message</h2>
+            <form class="contact-form__form">
+                <div class="contact-form__group">
+                    <label class="contact-form__label" for="contact-name">Nom Complet</label>
+                    <input class="contact-form__input" id="contact-name" name="name" type="text"
+                        placeholder="Nom Complet" aria-label="Nom complet" />
+                </div>
+                <div class="contact-form__group">
+                    <label class="contact-form__label" for="contact-email">Email</label>
+                    <input class="contact-form__input" id="contact-email" name="email" type="email" placeholder="Email"
+                        aria-label="Email" />
+                </div>
+                <div class="contact-form__group">
+                    <label class="contact-form__label" for="contact-subject">Sujet</label>
+                    <input class="contact-form__input" id="contact-subject" name="subject" type="text"
+                        placeholder="Sujet" aria-label="Sujet" />
+                </div>
+                <div class="contact-form__group">
+                    <label class="contact-form__label" for="contact-message">Message</label>
+                    <textarea class="contact-form__textarea" id="contact-message" name="message" placeholder="Message"
+                        aria-label="Message"></textarea>
+                </div>
+                <button class="contact-form__submit" type="submit">Envoyer le message</button>
+            </form>
         </section>
 
         <section class="coordonnees">
