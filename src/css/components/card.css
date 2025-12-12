@@ -175,6 +175,36 @@
     height: 1rem;
 }
 
+/* Scenes cards (Les Scènes) */
+.cards .card>img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+    margin-bottom: 0.6rem;
+}
+
+.card .stage-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--accent-color, #FFD700);
+    font-size: 1.35rem;
+    margin: 0.25rem 0 0.35rem 0;
+}
+
+.card .stage-name img {
+    width: 0.9rem;
+    height: 0.9rem;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(79%) saturate(1820%) hue-rotate(11deg) brightness(107%) contrast(102%);
+}
+
+.card .stage-description {
+    display: block;
+    color: #e6e9f4;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
 /* Artist listing cards */
 .cards a {
     text-decoration: none;
