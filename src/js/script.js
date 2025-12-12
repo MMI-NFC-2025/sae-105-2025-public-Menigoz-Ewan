@@ -13,6 +13,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Filters: toggle active state on Programme page
+document.addEventListener('DOMContentLoaded', function () {
+    const filterGroups = document.querySelectorAll('.filtre-boutons');
+    if (!filterGroups.length) return;
+
+    filterGroups.forEach(group => {
+        group.addEventListener('click', (event) => {
+            const btn = event.target.closest('.btn-filtre');
+            if (!btn) return;
+            group.querySelectorAll('.btn-filtre').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+});
+
 // Partners carousel script
 document.addEventListener('DOMContentLoaded', function () {
     const track = document.querySelector('.partners-carousel__track');
