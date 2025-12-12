@@ -3,6 +3,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    transition: all 0.4s ease-in-out;
 }
 
 .menu__list {
@@ -19,6 +20,7 @@
     font-size: 0.82rem;
     padding: 0.18rem 0.36rem;
     white-space: nowrap;
+    transition: color 0.3s;
 }
 
 .menu-btn {
@@ -43,6 +45,7 @@
     height: 3px;
     border-radius: 3px;
     background: #ffffff;
+    transition: all 0.3s ease;
 }
 
 /* Keep hamburger visible on all screens; menu remains hidden */
