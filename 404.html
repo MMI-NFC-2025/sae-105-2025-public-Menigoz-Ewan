@@ -28,6 +28,15 @@
                 <li class="menu__item"><a class="menu__link" href="/les-scenes.html">Les Scènes</a></li>
                 <li class="menu__item"><a class="menu__link" href="/infos-pratiques.html">Infos Pratiques</a></li>
                 <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+                <li class="menu__item menu__item--search">
+                    <form class="menu__search" action="/recherche.html" method="get" role="search">
+                        <label class="menu__search-label" for="menuSearch">Rechercher</label>
+                        <div class="menu__search-row">
+                            <input class="menu__search-input" type="search" id="menuSearch" name="q" placeholder="Rechercher un artiste, une scène..." required>
+                            <button class="menu__search-button" type="submit">Chercher</button>
+                        </div>
+                    </form>
+                </li>
             </ul>
         </nav>
         <script src="src/js/script.js" defer></script>

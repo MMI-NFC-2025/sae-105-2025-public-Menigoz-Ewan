@@ -12,3 +12,24 @@
 ## Sujet
 
 [https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862](https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862)
+
+MENU présent sur toutes les pages
+/404.html
+/index.html
+/contact.html
+/infos-pratiques.html
+/le-festival.html
+/les-artistes.html
+/les-scenes.html
+/programme.html
+/template-artiste1.html
+/template-artiste2.html
+/template-scene1.html
+
+CARROUSEL présent sur 3 pages
+/index.html
+/template-artiste1.html
+/template-artiste2.html
+
+DÉPLIANTS présents sur 1 page
+/infos-pratiques.html
