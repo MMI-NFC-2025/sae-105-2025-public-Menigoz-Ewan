@@ -239,3 +239,28 @@
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
     max-width: 700px;
 }
+
+/* Infos Pratiques page: shared section title and spacing */
+.infos-page .tarifs,
+.infos-page .hebergements,
+.infos-page .acces,
+.infos-page .faq {
+    padding: 3rem 5%;
+    background-color: #01123E;
+}
+
+.infos-page .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--accent-color, #FFD700);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: left;
+    margin: 0 0 1.25rem 0;
+}
+
+.infos-page .section-title img {
+    width: 1.6rem;
+    height: 1.6rem;
+}

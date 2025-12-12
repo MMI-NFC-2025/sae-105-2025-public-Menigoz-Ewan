@@ -378,3 +378,72 @@
     margin: 0.15rem 0 0;
     font-size: 1rem;
 }
+
+/* Infos Pratiques page cards */
+.infos-page .tarif-cards,
+.infos-page .hebergement-cards,
+.infos-page .acces-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.infos-page .tarif-card,
+.infos-page .hebergement-card,
+.infos-page .acces-card {
+    background: #1b2e58;
+    border: 2px solid var(--accent-color, #FFD700);
+    border-radius: 16px;
+    padding: 1.25rem 1.25rem 1.35rem;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+    color: #e6e9f4;
+}
+
+.infos-page .tarif-card .title,
+.infos-page .hebergement-card-title,
+.infos-page .acces-card-title {
+    color: var(--accent-color, #FFD700);
+    font-weight: 800;
+    margin: 0 0 0.75rem 0;
+}
+
+.infos-page .tarif-card .title img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.infos-page .tarif-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.75rem 0;
+}
+
+.infos-page .tarif-card ul,
+.infos-page .hebergement-card ul {
+    list-style: disc inside;
+    margin: 0.25rem 0 0;
+    padding: 0;
+}
+
+.infos-page .tarif-card li,
+.infos-page .hebergement-card li {
+    margin: 0.3rem 0;
+}
+
+.infos-page .hebergement-card-text,
+.infos-page .acces-card-text {
+    color: #e6e9f4;
+    margin: 0.2rem 0;
+}
+
+@media (min-width: 900px) {
+
+    .infos-page .tarif-cards,
+    .infos-page .hebergement-cards,
+    .infos-page .acces-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
