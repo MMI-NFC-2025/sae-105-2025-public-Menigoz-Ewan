@@ -126,29 +126,6 @@
     margin-right: 0.5rem;
 }
 
-/* On larger screens use cover for a full-bleed hero look */
-@media (min-width: 900px) {
-    .hero {
-        min-height: 70vh;
-        padding: 6rem 5%;
-    }
-
-    .hero__image {
-        object-fit: cover;
-        /* use filter so only the image is visually affected */
-        filter: brightness(0.45) contrast(1.02);
-        object-position: center;
-    }
-
-    .hero__logo--text {
-        font-size: 3.25rem;
-    }
-
-    .hero__badge--text {
-        font-size: 0.95rem;
-    }
-}
-
 /* Logo inside hero (above title) */
 .hero__logo {
     width: 120px;
@@ -161,10 +138,3 @@
     z-index: 2;
 }
 
-@media (min-width: 900px) {
-    .hero__logo {
-        width: 180px;
-        /* enlarged for desktop */
-        margin-bottom: 1rem;
-    }
-}

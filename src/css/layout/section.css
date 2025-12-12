@@ -100,6 +100,7 @@
     padding: 2.5rem 2.25rem;
     color: var(--secondary-color, #97BC62);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    text-align: center;
 }
 
 .eco__responsable .eco__icon {
@@ -124,11 +125,68 @@
     text-align: center;
 }
 
+
 .eco__responsable .btn-en-savoir-plus {
+    display: inline-block;
+    margin: 0 auto;
     background: rgba(2, 34, 54, 0.95);
     color: var(--secondary-color, #97BC62);
     border: 2px solid var(--secondary-color, #97BC62);
     padding: 0.6rem 1.1rem;
     border-radius: 10px;
-    box-align: center;
 }
+
+/* Partners carousel */
+.partners-carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 3rem;
+}
+
+.partners-carousel__track {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 1.25rem;
+    flex: 1 1 auto;
+}
+
+.partners-carousel__item {
+    min-width: 220px;
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    /* make items larger so partner logos fill the card */
+    min-width: 320px;
+    height: 260px;
+    flex: 0 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-carousel__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Partenaires title */
+.partenaires__section--title {
+    color: var(--accent-color, #FFD700);
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.partners-carousel__nav {
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        color: #fff;
+        padding: 0.4rem 0.7rem;
+        border-radius: 6px;
+        cursor: pointer;
+    }

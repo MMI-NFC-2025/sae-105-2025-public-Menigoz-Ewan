@@ -12,3 +12,20 @@ document.addEventListener('DOMContentLoaded', function () {
         nav.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
     });
 });
+
+// Partners carousel script
+document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.partners-carousel__track');
+    const prev = document.querySelector('.partners-carousel__nav--prev');
+    const next = document.querySelector('.partners-carousel__nav--next');
+    if (!track || !prev || !next) return;
+
+    const itemWidth = () => track.querySelector('.partners-carousel__item').getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap || 0);
+
+    prev.addEventListener('click', () => {
+        track.scrollBy({ left: -itemWidth(), behavior: 'smooth' });
+    });
+    next.addEventListener('click', () => {
+        track.scrollBy({ left: itemWidth(), behavior: 'smooth' });
+    });
+});

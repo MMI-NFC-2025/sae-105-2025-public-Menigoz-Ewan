@@ -100,26 +100,35 @@
         </section>
 
         <section class="eco__responsable">
-            <img class="eco__icon" src="assets/icons/vecteurinfospratiques.svg" alt="eco">
+            <img class="eco__icon" src="assets/icons/vecteurinfospratiques.svg      " alt="eco">
             <h2 class="eco__responsable--title">Festival Éco-responsable</h2>
             <p class="eco__responsable--text">Le Flying Tap Fest s'engage pour l'environnement : énergie 100%
                 renouvelable, gobelets réutilisables, tri sélectif, mobilité douce et restauration locale et bio.</p>
             <a href="/le-festival.html#valeurs" class="btn-en-savoir-plus">En savoir plus sur nos valeurs</a>
         </section>
 
-        <img src="assets/images/imagefond2.avif" alt="Image de fond décorative">
-        <style>
-            img {
-                display: block;
-                max-width: 100%;
-                height: auto;
-            }
-        </style>
-
         <section class="partenaires">
             <h2 class="partenaires__section--title">Nos partenaires</h2>
-            <img src="assets/images/passculture.avif" alt="pass culture">
-            <img src="assets/images/paysdemontbetourisme.avif" alt="pdmtourisme">
+            <div class="partners-carousel" aria-roledescription="carousel">
+                <button class="partners-carousel__nav partners-carousel__nav--prev"
+                    aria-label="Partenaire précédent">‹</button>
+                <div class="partners-carousel__track" role="list">
+                    <div class="partners-carousel__item" role="listitem">
+                        <img src="assets/images/passculture.avif" alt="Pass Culture" />
+                    </div>
+                    <div class="partners-carousel__item" role="listitem">
+                        <img src="assets/images/paysdemontbetourisme.avif" alt="Pays de Montbéliard Tourisme" />
+                    </div>
+                    <div class="partners-carousel__item" role="listitem">
+                        <img src="assets/images/rhythmsquad.avif" alt="Rhythm Squad" />
+                    </div>
+                    <div class="partners-carousel__item" role="listitem">
+                        <img src="assets/images/tapcollective.avif" alt="Tap Collective" />
+                    </div>
+                </div>
+                <button class="partners-carousel__nav partners-carousel__nav--next"
+                    aria-label="Partenaire suivant">›</button>
+            </div>
         </section>
     </main>
 
