@@ -186,3 +186,27 @@
     line-height: 1.5;
     margin: 0;
 }
+
+/* Hero variant for "Infos Pratiques" page */
+.hero--infos {
+    background-color: #01123E;
+    min-height: auto;
+    padding: 6.5rem 5% 3rem;
+    text-align: center;
+}
+
+.hero--infos .hero-title {
+    color: var(--accent-color, #FFD700);
+    font-size: 2.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 1rem 0;
+}
+
+.hero--infos .hero-text {
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+}
