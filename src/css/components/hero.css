@@ -18,9 +18,9 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    /* show full image on mobile */
-    object-position: center top;
+    object-fit: cover;
+    /* fill entire container */
+    object-position: center;
     z-index: 0;
     /* darken/fade image only — keeps overlaid content fully opaque */
     filter: brightness(0.45) contrast(1.02);
@@ -137,4 +137,3 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
     z-index: 2;
 }
-

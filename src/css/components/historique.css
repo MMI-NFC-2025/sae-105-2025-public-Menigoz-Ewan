@@ -1,0 +1,82 @@
+/* Historique section - Mobile-first */
+
+.historique {
+    padding: 3rem 5%;
+    background-color: #01123E;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.historique .section-title {
+    color: var(--accent-color, #FFD700);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* Hero image in historique section */
+.historique img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* Timeline/chronological text styling */
+.historique-text {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent-color, #FFD700);
+    border-radius: 6px;
+    position: relative;
+}
+
+/* Bold the year/date at the start of each paragraph */
+.historique-text::first-line {
+    font-weight: 700;
+    color: var(--accent-color, #FFD700);
+}
+
+/* Desktop: Side-by-side layout with image on left */
+@media (min-width: 900px) {
+    .historique {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    .historique .section-title {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .historique img {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 0;
+    }
+
+    /* Timeline container on right */
+    .historique-timeline {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .historique-text {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
